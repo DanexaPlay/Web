@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>Lab1</title>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <header>
+            <h1>Лыба Данил P3210 Вариант 12661</h1>
+        </header>
+        <canvas id="graph" width="600" height="600"></canvas>
+   
+        <div class="values">
+            <form id="point-form">
+                <div class="xValue">
+                    <label> <input type="checkbox" name="x" value="-5"> -5 </label>
+                    <label> <input type="checkbox" name="x" value="-4"> -4 </label>
+                    <label> <input type="checkbox" name="x" value="-3"> -3 </label>
+                    <label> <input type="checkbox" name="x" value="-2"> -2 </label>
+                    <label> <input type="checkbox" name="x" value="-1"> -1 </label>
+                    <label> <input type="checkbox" name="x" value="0"> 0 </label>
+                    <label> <input type="checkbox" name="x" value="1"> 1 </label>
+                    <label> <input type="checkbox" name="x" value="2"> 2 </label>
+                    <label> <input type="checkbox" name="x" value="3"> 3 </label>
+                    <p>Выберите X</p>
+                </div>
+                <div class="yValue">
+                    <input type="text" id="y" name="y" placeholder="Выберите Y">
+                </div>
+                
+                <div class="rValue">
+                <select id="R" name="r">
+                <option value="">Выберите R</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                </select>
+                </div>
+                <button type="submit">Проверить</button>
+            </form>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>R</th>
+                        <th>Результат</th>
+                        <th>Дата и время</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="lab1.js"></script>
+    
+</body>
+</html>

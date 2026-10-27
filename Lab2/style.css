@@ -1,0 +1,42 @@
+header {
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#point-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input, select {
+    margin: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+#y, #R {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+}
+
+.container > canvas {
+    width: 100%;
+    max-width: 600px;
+}
